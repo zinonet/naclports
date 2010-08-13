@@ -1,4 +1,5 @@
 #summary A recipe book for adding your example to the naclports gallery.
+#labels Featured
 
 = Add to the naclports Gallery Page =
 
@@ -6,12 +7,12 @@ You can easily add your example to the gallery page in a few simple steps.  Be a
 
   # Build your example.
   # Create a directory under naclports/src/gallery for your example's web resources, e.g. `mkdir naclports/src/gallery/photo`.
-  # Copy your example's web site into this directory.  Your site will likely include a main HTML file, some CSS, JavaScript and of course, your .nexes.
+  # Copy your example's web site into this directory.  Your site will likely include a main HTML file, some CSS, !JavaScript and of course, your .nexes.
   # Take a screen shot of your example, make it about 400 pixels wide.  Copy this screen shot into the gallery directory you made in step 2.
-  # Edit naclports/src/gallery/index.html to include a table row for your example.  It's easiest to copy and paste from another example.  Include a short descriptive paragraph about your example.
+  # Edit `naclports/src/gallery/index.html` to include a table row for your example.  It's easiest to copy and paste from another example.  Include a short descriptive paragraph about your example.
   # Create a change list using `svn add` and `gcl change` and upload it.  *Note:* you must do this step before the next one, or esle svn will not see the files in order to set the required properties.
   # *Important:* set svn mime-type properties to your HTML and CSS files:
     * For HTML files: {{{svn propset svn:mime-type text/html photo.html}}}
     * For CSS files: {{{svn propset svn:mime-type text/css photo.css}}}
 
-Go through the usual code review process.  Once you commit your CL, your example should be in the gallery.
+Go through the usual code review process.  Once you commit your CL, your example should appear in the gallery.
