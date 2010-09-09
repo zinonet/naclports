@@ -1,0 +1,25 @@
+#summary How to check out naclports source code.
+
+== Prerequisites ==
+
+You need to install [http://dev.chromium.org/developers/how-tos/install-gclient depot_tools] in order to use gclient.
+
+== Create a Client View Directory ==
+
+{{{
+mkdir naclports
+}}}
+
+== Create a .gclient Configuration ==
+
+{{{
+cd naclports
+gclient config http://naclports.googlecode.com/svn/trunk/src
+}}}
+
+*Note:* If you are a naclports committer, you will want to check out a writeable version of the repo using this url: `https://naclports.googlecode.com/svn/trunk/src`
+
+== Sync to the repo ==
+{{{
+gclient sync
+}}}
