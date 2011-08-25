@@ -2,14 +2,14 @@ Installing SDL (and other libraries) from naclports
 
 Note: naclports is currently under heavy construction. Expect to make small adaptations to this recipe. Also, this document is a little Linux-centric at this time.
 
-===Install SDK and other required Components===
+===Install the Native Client SDK and other required components===
  * Install and unpack the [http://code.google.com/chrome/nativeclient/docs/download.html Native Client SDK].
  * Install/upgrade the Linux kernel to version 2.6.1 (c.f. http://code.google.com/p/naclports/).
 
 ===Check out the naclports source===
  * Follow these steps to install the depot_tools, followed by the actual “check-out”:  http://code.google.com/p/naclports/wiki/HowTo_Checkout?tm=4
 
-===Building SDL (or other libraries)===
+===Build SDL (or other libraries)===
  * Make the Native Client SDK location known to naclports, e.g.:
 {{{
 export NACL_SDK_ROOT=<your-path>/native_client_sdk_0_5_1031/
@@ -25,9 +25,8 @@ export NACL_PACKAGES_BITSIZE=32; ./nacl-SDL-1.2.14.sh
 export NACL_PACKAGES_BITSIZE=64;  ./nacl-SDL-1.2.14.sh
 }}}
 
-===Verification===
-Within your SDK you should now have SDL libraries and headers:
- * [libs] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/lib/
- * [headers] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/include/SDL/
- * [conf-tools] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/bin/
- * [same for 64bit] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl64/...
+ * Verify that you now have the following SDL libraries and headers within the Native Client SDK:
+  * [libs] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/lib/
+  * [headers] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/include/SDL/
+  * [conf-tools] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/bin/
+  * [same for 64bit] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl64/...
