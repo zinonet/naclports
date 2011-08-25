@@ -19,14 +19,14 @@ This location is used both to access the compiler and also as the location in wh
 {{{
 cd src/packages/libraries/SDL-1.2.14/
 }}}
- * Build both the 3-2bit and 64-bit versions of the library:
+ * Build both the 32-bit and 64-bit versions of the library:
 {{{
 export NACL_PACKAGES_BITSIZE=32; ./nacl-SDL-1.2.14.sh
 export NACL_PACKAGES_BITSIZE=64;  ./nacl-SDL-1.2.14.sh
 }}}
 
  * Verify that you now have the following SDL libraries and headers within the Native Client SDK:
-  * [libs] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/lib/
-  * [headers] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/include/SDL/
-  * [conf-tools] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/bin/
-  * [same for 64bit] native_client_sdk_0_5_1031/toolchain/linux_x86/nacl64/...
+  * *libs:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/lib/`
+  * *headers:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/include/SDL/`
+  * *conf-tools:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/bin/`
+  * *same for 64-bit:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl64/...`
