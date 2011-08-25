@@ -22,7 +22,7 @@ cd src/packages/libraries/SDL-1.2.14/
  * Build both the 32-bit and 64-bit versions of the library:
 {{{
 export NACL_PACKAGES_BITSIZE=32; ./nacl-SDL-1.2.14.sh
-export NACL_PACKAGES_BITSIZE=64;  ./nacl-SDL-1.2.14.sh
+export NACL_PACKAGES_BITSIZE=64; ./nacl-SDL-1.2.14.sh
 }}}
 
  * Verify that you now have the following SDL libraries and headers within the Native Client SDK:
