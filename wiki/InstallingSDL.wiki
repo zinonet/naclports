@@ -4,7 +4,7 @@ Note: naclports is currently under heavy construction. Expect to make small adap
 
 ===Install the Native Client SDK and other required components===
  * Install and unpack the [http://code.google.com/chrome/nativeclient/docs/download.html Native Client SDK].
- * Install/upgrade the Linux kernel to version 2.6.1 (c.f. http://code.google.com/p/naclports/).
+ * Install/upgrade the Linux patch utility to version 2.6.1 (c.f. http://code.google.com/p/naclports/).
 
 ===Check out the naclports source===
  * Follow these steps to install the depot_tools, followed by the actual “check-out”:  http://code.google.com/p/naclports/wiki/HowTo_Checkout?tm=4
