@@ -12,12 +12,12 @@ Note: naclports is currently under heavy construction. Expect to make small adap
 ===Build SDL (or other libraries)===
  * Make the Native Client SDK location known to naclports, e.g.:
 {{{
-export NACL_SDK_ROOT=<your-path>/native_client_sdk_0_5_1031/
+export NACL_SDK_ROOT=<your-path>/nacl_sdk/pepper_<version>
 }}}
 This location is used both to access the compiler and also as the location in which to install the new libraries and headers.
  * Change into the naclport’s SDL directory:
 {{{
-cd src/packages/libraries/SDL-1.2.14/
+cd src/libraries/SDL-1.2.14/
 }}}
  * Build both the 32-bit and 64-bit versions of the library:
 {{{
@@ -26,7 +26,7 @@ export NACL_PACKAGES_BITSIZE=64; ./nacl-SDL-1.2.14.sh
 }}}
 
  * Verify that you now have the following SDL libraries and headers within the Native Client SDK:
-  * *libs:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/lib/`
-  * *headers:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/include/SDL/`
-  * *conf-tools:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl/usr/bin/`
-  * *same for 64-bit:* `native_client_sdk_0_5_1031/toolchain/linux_x86/nacl64/...`
+  * *libs:* `${NACL_SDK_ROOT}/toolchain/linux_x86_newlib/i686-nacl/usr/lib/`
+  * *headers:* `${NACL_SDK_ROOT}/toolchain/linux_x86_newlib/i686-nacl/usr/include/SDL/`
+  * *conf-tools:* `${NACL_SDK_ROOT}/toolchain/linux_x86_newlib/i686-nacl/usr/bin/`
+  * *same for 64-bit:* `${NACL_SDK_ROOT}/toolchain/linux_x86_newlib/x86_64-nacl/...`
