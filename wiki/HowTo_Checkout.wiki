@@ -2,7 +2,7 @@
 
 == Quick Links ==
 [http://code.google.com/p/naclports/source/browse#svn/trunk/src/native_client Browse the code]
-[http://code.google.com/p/naclports/source/list Recent changes]
+[http://code.google.com/p/naclports/source/list Recent changes][https://chromium.googlesource.com/external/naclports/ Git Mirror]
 
 == Prerequisites ==
 
@@ -12,12 +12,18 @@ You need to install [http://dev.chromium.org/developers/how-tos/install-depot-to
 
 {{{
 mkdir naclports
+cd naclports
 }}}
 
-== Create a .gclient Configuration ==
+== Create a .gclient Configuration (git) ==
 
 {{{
-cd naclports
+gclient config --name=src  https://chromium.googlesource.com/external/naclports.git
+}}}
+
+== Create a .gclient Configuration (svn) ==
+
+{{{
 gclient config http://naclports.googlecode.com/svn/trunk/src
 }}}
 
