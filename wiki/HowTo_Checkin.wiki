@@ -11,3 +11,31 @@ Once you have an LGTM for your change list, if you are a member of the naclports
   * You will likely be prompted for a password for your commit. For @google.com accounts you can find your password on this page: https://code.google.com/hosting/settings
 
 If you not a member of the naclports project, ask one of your reviewers to finish submitting your CL. Once you have submitted a few CLs and demonstrated you know how to stay out of trouble then you can ask one of the project administrators to add you as a naclports project member. 
+
+== Using Git ==
+
+Checking in via a git checkout is possible and requires git-svn.
+
+The first step is to configure git-svn with the following commands:
+
+{{{
+git svn init https://naclports.googlecode.com/svn -Ttrunk/src
+git config svn-remote.svn.fetch trunk/src:refs/remotes/origin/master
+git svn fetch
+}}}
+
+Assuming your git checkout is relatively recent the final command
+should not not actually import any revisions and should return very
+quickly.
+
+To upload a change for review use:
+
+{{{
+git cl upload
+}}}
+
+To commit a change back to svn use:
+
+{{{
+git cl dcommit
+}}}
