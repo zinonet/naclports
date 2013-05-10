@@ -1,8 +1,8 @@
 #summary How to check out naclports source code.
 
 == Quick Links ==
-[http://code.google.com/p/naclports/source/browse#svn/trunk/src/native_client Browse the code]
-[http://code.google.com/p/naclports/source/list Recent changes][https://chromium.googlesource.com/external/naclports/ Git Mirror]
+[http://code.google.com/p/naclports/source/browse#svn/trunk/src/native_client Browse the code] |
+[http://code.google.com/p/naclports/source/list Recent changes] | [https://chromium.googlesource.com/external/naclports/ Git Mirror]
 
 == Prerequisites ==
 
