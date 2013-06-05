@@ -1,10 +1,9 @@
 Installing SDL (and other libraries) from naclports 
 
-Note: naclports is currently under heavy construction. Expect to make small adaptations to this recipe. Also, this document is a little Linux-centric at this time.
+Note: naclports is currently under development. Expect to make small adaptations to this recipe.
 
 ===Install the Native Client SDK and other required components===
  * Install and unpack the [http://code.google.com/chrome/nativeclient/docs/download.html Native Client SDK].
- * Install/upgrade the Linux patch utility to version 2.6.1 (c.f. http://code.google.com/p/naclports/).
 
 ===Check out the naclports source===
  * Follow these steps to install the depot_tools, followed by the actual “check-out”:  http://code.google.com/p/naclports/wiki/HowTo_Checkout?tm=4
@@ -15,14 +14,17 @@ Note: naclports is currently under heavy construction. Expect to make small adap
 export NACL_SDK_ROOT=<your-path>/nacl_sdk/pepper_<version>
 }}}
 This location is used both to access the compiler and also as the location in which to install the new libraries and headers.
- * Change into the naclport’s SDL directory:
+ * Build sdl for all NaCl architectures using:
 {{{
-cd src/libraries/SDL-1.2.14/
+$ ./make_all.sh sdl
 }}}
- * Build both the 32-bit and 64-bit versions of the library:
+ * or build sdl for just one architecture:
 {{{
-export NACL_PACKAGES_BITSIZE=32; ./nacl-SDL-1.2.14.sh
-export NACL_PACKAGES_BITSIZE=64; ./nacl-SDL-1.2.14.sh
+$ NACL_ARCH=arm make sdl
+}}}
+ * or build sdl for the default architecture (x86_64) with just:
+{{{
+$ make sdl
 }}}
 
  * Verify that you now have the following SDL libraries and headers within the Native Client SDK:
