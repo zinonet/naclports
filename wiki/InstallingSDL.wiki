@@ -6,7 +6,7 @@ Note: naclports is currently under development. Expect to make small adaptations
  * Install and unpack the [http://code.google.com/chrome/nativeclient/docs/download.html Native Client SDK].
 
 ===Check out the naclports source===
- * Follow these steps to install the depot_tools, followed by the actual “check-out”:  http://code.google.com/p/naclports/wiki/HowTo_Checkout?tm=4
+ * Follow these steps to install the depot_tools, followed by the actual “check-out”:  HowTo_Checkout
 
 ===Build SDL (or other libraries)===
  * Make the Native Client SDK location known to naclports, e.g.:
