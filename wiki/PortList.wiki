@@ -1,0 +1,9 @@
+#summary List of ports available in naclports.
+
+|| *Name* || *Upstream Archive* || *NaCl Patch* ||
+|| bash-4.2             || [http://ftp.gnu.org/gnu/bash/bash-4.2.tar.gz bash-4.2.tar.gz] || 3044 ||
+|| gdb-6.8              || [http://git.chromium.org/native_client/nacl-gdb.git@aeafd16b903de784108b15534ccdab8b1a83f8bb nacl-gdb.git@aeafd16b903de784108b15534ccdab8b1a83f8bb] || 5240 ||
+|| thttpd-2.25b         || [http://www.acme.com/software/thttpd/thttpd-2.25b.tar.gz thttpd-2.25b.tar.gz] || 27489 ||
+|| ruby_ppapi           ||                                                    ||  ||
+|| mongoose-3.8         || [https://mongoose.googlecode.com/files/mongoose-3.8.tgz mongoose-3.8.tgz] || 2747 ||
+|| git-1.8.3.3          || [https://github.com/git/git/archive/v1.8.3.3/git-1.8.3.3.tar.gz git-1.8.3.3.tar.gz] || 853 ||
