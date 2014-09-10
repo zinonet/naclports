@@ -1,8 +1,7 @@
 #summary How to check out naclports source code.
 
 == Quick Links ==
-[http://code.google.com/p/naclports/source/browse#svn/trunk/src/native_client Browse the code] |
-[http://code.google.com/p/naclports/source/list Recent changes] | [https://chromium.googlesource.com/external/naclports/ Git Mirror]
+[https://chromium.googlesource.com/external/naclports.git Git Mirror]
 
 == Prerequisites ==
 
@@ -20,14 +19,6 @@ cd naclports
 {{{
 gclient config --name=src  https://chromium.googlesource.com/external/naclports.git
 }}}
-
-== Create a .gclient Configuration (svn) ==
-
-{{{
-gclient config http://naclports.googlecode.com/svn/trunk/src
-}}}
-
-*Note:* If you are a naclports committer, you will want to check out a writeable version of the repo using this url: `https://naclports.googlecode.com/svn/trunk/src`
 
 == Sync to the repo ==
 {{{
