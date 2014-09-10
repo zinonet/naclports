@@ -1,7 +1,10 @@
 #summary How to check out naclports source code.
 
 == Quick Links ==
-[https://chromium.googlesource.com/external/naclports.git Git Mirror]
+
+The naclports sources maintained in git:
+
+https://chromium.googlesource.com/external/naclports.git
 
 == Prerequisites ==
 
