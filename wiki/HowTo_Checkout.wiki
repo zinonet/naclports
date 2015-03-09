@@ -29,3 +29,10 @@ gclient config --name=src  https://chromium.googlesource.com/external/naclports.
 {{{
 gclient sync
 }}}
+
+== Checking out a branch (e.g. pepper_42) ==
+
+{{{
+git checkout -b pepper_42 origin/pepper_42
+gclient sync
+}}}
